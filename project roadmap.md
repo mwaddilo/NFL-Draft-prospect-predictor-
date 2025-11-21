@@ -10,4 +10,4 @@
 - [ ] Make notes of successful changes, and also unscuccessful attempts
 - [ ] Discuss progress with group memebrs/Exchange notes
 - [X] Create power point slide to set expectation DONE
-this is a change
+- [ ]Hold a kickoff meeting using the slide to confirm roles, deadlines, and communication expectations
