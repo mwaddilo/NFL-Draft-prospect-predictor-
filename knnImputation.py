@@ -35,7 +35,7 @@ draft_data['draft_age'].fillna(draft_data.groupby('class')['draft_age'].transfor
 
 #fancy impute removes column names.
 #draft_data_cols = list(draft_data)
-draft_data_float = draft_data.select_dtypes(include=[np.float])
+draft_data_float = draft_data.select_dtypes(include=[np.number])
 # Use k nearest rows which have a feature to fill in each row's
 # missing features
 draft_data = pd.DataFrame(KNN(k=7).fit_transform(draft_data_float))
@@ -45,6 +45,7 @@ draft_data.to_csv('dumpfile.csv')
 
 
 #distance.cityblock([ht_pos1, bmi_pos1, yd40_pos1], [ht_pos2, bmi_pos2, yd40_pos2])
+
 
 
 
