@@ -4,7 +4,9 @@ Created on Sun Mar  3 14:06:04 2019
 
 
 """
-
+import requests
+import bs4
+import pandas as pd
 
 def findTables(url):
     res = requests.get(url)
@@ -156,6 +158,7 @@ for index in range(len(stat_list)):
     writeLine += '\n'
     dumpfile.write(writeLine)
 dumpfile.close()    
+
 
 
 
